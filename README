@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @author 12345
+ * @copyright 2011
+ */
+
+$con = mysql_connect("mysql9.000webhost.com","user","passs");
+
+
+
+                            if (!$con)
+                          {
+                            echo "no se conectó";
+                          die('Could not connect: ' . mysql_error());  
+                          }
+                          else
+                          {
+                            echo "se conectó";
+                          }      
+
+mysql_select_db("a3487899_cuponic");
+
+
+$bdNuevaFila ="INSERT INTO Cliente (idCliente, nombre, facebook) VALUES (1, 'Jose', 2)";
+
+mysql_query($bdNuevaFila,$con);
+
+?>
