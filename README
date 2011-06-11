@@ -19,11 +19,14 @@ $con = mysql_connect("mysql9.000webhost.com","user","passs");
                             echo "se conectó";
                           }      
 
-mysql_select_db("a3487899_cuponic");
+mysql_select_db("DB");
 
 
 $bdNuevaFila ="INSERT INTO Cliente (idCliente, nombre, facebook) VALUES (1, 'Jose', 2)";
 
 mysql_query($bdNuevaFila,$con);
 
+agregado
+
 ?>
+
